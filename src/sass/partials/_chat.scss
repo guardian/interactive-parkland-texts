@@ -18,7 +18,7 @@
         border-radius: 0 0 0 12px;
         position: absolute;
         bottom: -12px;
-        right: 6px;
+        right: 10px;
         background-color: $c-grey;
     }
 
@@ -38,7 +38,7 @@
     color: $c-white;
 
     &:after {
-        left: 6px;
+        left: 10px;
         right: auto;
         border-radius: 0 0 12px;
         background-color: $c-red;
