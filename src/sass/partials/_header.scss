@@ -3,11 +3,6 @@
     z-index: 6;
     margin: 0;
     padding: 6px 0;
-    background-color: $c-pale-blue;
-
-    @include mq(leftCol) {
-        background-color: transparent;
-    }
 }
 
 .texts-header__title {

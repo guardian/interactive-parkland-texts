@@ -1,0 +1,25 @@
+.texts-body__inner {
+    position: relative;
+    z-index: 5;
+    padding: 24px 0 12px;
+
+    p {
+        font-family: 'Guardian Text Egyptian Web';
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 18px;
+        margin-top: 0;
+    }
+}
+
+.texts-body__title {
+    font-family: 'Guardian Egyptian Web';
+    font-size: 24px;
+    line-height: 1.2;
+    color: $c-black;
+
+    span {
+        color: $c-red;
+        display: block;
+    }
+}
