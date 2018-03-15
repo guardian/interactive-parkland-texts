@@ -1,0 +1,50 @@
+.texts-intro {
+    position: relative;
+    z-index: 5;
+    padding: 24px 0 0;
+    background-color: $c-pale-blue;
+    margin-bottom: 48px;
+
+    @include mq(leftCol) {
+        background-color: transparent;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -48px;
+        left: 0;
+        right: 0;
+        height: 48px;
+        background: linear-gradient(180deg, $c-pale-blue, rgba($c-pale-blue, 0));
+
+        @include mq(leftCol) {
+            background: none;
+        }
+    }
+
+    p {
+        font-family: 'Guardian Text Egyptian Web';
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 18px;
+        margin-top: 0;
+    }
+}
+
+.texts-intro__drop-cap {
+    font-family: 'Guardian Egyptian Web';
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 200;
+    float: left;
+    padding-top: 2px;
+    color: $c-blue;
+    margin-right: 6px;
+    height: 4.3em;
+}
+
+.texts-intro__drop-inner {
+    font-size: 5.4em;
+    line-height: 0.75;
+}

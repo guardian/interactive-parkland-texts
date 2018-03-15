@@ -1,0 +1,50 @@
+.texts-header {
+    position: relative;
+    z-index: 6;
+    margin: 0;
+    padding: 6px 0;
+    background-color: $c-pale-blue;
+
+    @include mq(leftCol) {
+        background-color: transparent;
+    }
+}
+
+.texts-header__title {
+    font-family: 'Guardian Egyptian Web';
+    font-weight: 900;
+    color: $c-black;
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0;
+
+    @include mq(desktop) {
+        font-size: 64px;
+        line-height: 1;
+    }
+}
+
+.texts-header__byline {
+    font-family: 'Guardian Egyptian Web';
+    color: $c-red;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 4px 0 6px;
+
+    @include mq(tablet) {
+        margin: 12px 0;
+    }
+
+    a {
+        font-weight: bold;
+        font-style: normal;
+        text-decoration: none;
+        color: $c-red;
+
+        &:hover {
+            color: $c-black;
+        }
+    }
+}
