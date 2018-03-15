@@ -23,3 +23,10 @@
         display: block;
     }
 }
+
+.texts-body__divider {
+    width: 100%;
+    height: 1px;
+    background-color: $c-grey;
+    margin: 48px 0 12px 0;
+}

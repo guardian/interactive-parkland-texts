@@ -21,6 +21,10 @@
         right: 6px;
         background-color: $c-grey;
     }
+
+    @include mq(tablet) {
+        max-width: 60%;
+    }
 }
 
 .texts-chat__sender {
@@ -47,6 +51,10 @@
 
 .texts-chat--right {
     margin-left: auto;
+
+    @include mq(tablet) {
+        margin-right: 80px;
+    }
 }
 
 .texts-chat--left + .texts-chat--left,
