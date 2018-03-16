@@ -1,7 +1,7 @@
 .texts-body__inner {
     position: relative;
     z-index: 5;
-    padding: 24px 0 12px;
+    padding: 0 0 12px;
 
     p {
         font-family: 'Guardian Text Egyptian Web';
@@ -14,8 +14,8 @@
 
 .texts-body__title {
     font-family: 'Guardian Egyptian Web';
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.1;
     color: $c-black;
 
     @include mq(desktop) {
@@ -50,5 +50,9 @@
     @include mq(desktop) {
         width: calc(100% + 10px);
         margin-left: -10px;
+    }
+
+    &:first-of-type {
+        margin-top: 0;
     }
 }
