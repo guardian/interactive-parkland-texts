@@ -30,8 +30,25 @@
 }
 
 .texts-body__divider {
-    width: 100%;
+    width: calc(100% + 20px);
     height: 1px;
     background-color: $c-grey;
-    margin: 48px 0 12px 0;
+    margin: 48px -10px 6px -10px;
+
+    @include mq(mobileLandscape) {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    @include mq(tablet) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include mq(desktop) {
+        width: calc(100% + 10px);
+        margin-left: -10px;
+    }
 }

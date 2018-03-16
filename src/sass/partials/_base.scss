@@ -1,8 +1,9 @@
 .texts {
-    overflow: auto;
+    overflow: hidden;
 }
 
 .texts-content {
+    position: relative;
     max-width: 620px;
 
     @include mq(leftCol) {
@@ -11,5 +12,17 @@
 
     @include mq(wide) {
         margin-left: 220px;
+    }
+
+    &:before {
+        @include mq(desktop) {
+            content: '';
+            position: absolute;
+            top: -12px;
+            bottom: -12px;
+            left: -10px;
+            width: 1px;
+            background-color: $c-grey;
+        }
     }
 }

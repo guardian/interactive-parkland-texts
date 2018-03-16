@@ -60,6 +60,7 @@ span.texts-header__dot {
 }
 
 .texts-header__byline {
+    position: relative;
     font-family: 'Guardian Egyptian Web';
     color: $c-red;
     font-style: italic;
@@ -67,9 +68,14 @@ span.texts-header__dot {
     font-size: 16px;
     line-height: 1.2;
     margin: 4px 0 6px;
+    padding-top: 6px;
 
     @include mq(tablet) {
         margin: 12px 0;
+    }
+
+    @include mq(desktop) {
+        min-height: 36px;
     }
 
     a {
@@ -80,6 +86,30 @@ span.texts-header__dot {
 
         &:hover {
             color: $c-black;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: -10px;
+        right: -10px;
+        height: 1px;
+        background-color: $c-grey;
+
+        @include mq(mobileLandscape) {
+            left: -20px;
+            right: -20px;
+        }
+
+        @include mq(tablet) {
+            left: 0;
+            right: 0;
+        }
+
+        @include mq(desktop) {
+            left: -10px;
         }
     }
 }
