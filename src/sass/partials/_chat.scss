@@ -4,7 +4,7 @@
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 12px;
-    color: $c-black;
+    color: $c-white;
 
     @include mq(desktop) {
         font-family: 'Guardian Egyptian Web';
@@ -28,7 +28,7 @@
     max-width: 75%;
     display: table;
     border-radius: 4px;
-    background-color: $c-grey;
+    background-color: $c-red;
     transition: opacity 0.2s linear;
     opacity: 0;
 
@@ -48,14 +48,14 @@
         position: absolute;
         bottom: -12px;
         right: 10px;
-        background-color: $c-grey;
+        background-color: $c-red;
         transform: opacity 0.7s linear;
 
         @include mq(desktop) {
-            width: 20px;
-            height: 20px;
-            border-radius: 0 0 0 20px;
-            bottom: -20px;
+            width: 16px;
+            height: 16px;
+            border-radius: 0 0 0 16px;
+            bottom: -16px;
         }
     }
 }
@@ -71,21 +71,21 @@
 .texts-chat__sender {
     display: block;
     font-weight: bold;
-    color: $c-red;
+    color: $c-black;
 }
 
 .texts-chat--left .text-chat__bubble {
-    background-color: $c-red;
-    color: $c-white;
+    background-color: $c-grey;
+    color: $c-black;
 
     &:after {
         left: 10px;
         right: auto;
         border-radius: 0 0 12px;
-        background-color: $c-red;
+        background-color: $c-grey;
 
         @include mq(desktop) {
-            border-radius: 0 0 20px;
+            border-radius: 0 0 16px;
         }
     }
 
@@ -95,7 +95,7 @@
     }
 
     .texts-chat__sender {
-        color: $c-black;
+        color: $c-red;
     }
 }
 

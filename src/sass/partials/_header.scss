@@ -30,6 +30,22 @@
     }
 }
 
+.texts-header__standfirst {
+    font-family: 'Guardian Egyptian Web';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: $c-black;
+    max-width: 80%;
+
+    @include mq(desktop) {
+        font-size: 32px;
+        line-height: 1;
+        margin-top: 12px;
+    }
+
+}
+
 .texts-header__byline {
     font-family: 'Guardian Egyptian Web';
     color: $c-red;
