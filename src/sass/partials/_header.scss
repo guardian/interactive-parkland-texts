@@ -30,6 +30,18 @@
     }
 }
 
+span.texts-header__dot {
+    display: inline;
+}
+
+.texts-header__dot:nth-of-type(2) {
+    opacity: 0.6;
+}
+
+.texts-header__dot:nth-of-type(3) {
+    opacity: 0.4;
+}
+
 .texts-header__standfirst {
     font-family: 'Guardian Egyptian Web';
     font-size: 24px;
