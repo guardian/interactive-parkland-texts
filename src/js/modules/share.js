@@ -4,7 +4,7 @@ var pageUrl = window.location.href.split('#')[0];
 
 module.exports =  {
     init: function() {
-        this.setLinks('.texts-share', 'Collision course: texts\'s terrible 2017');
+        this.setLinks('.texts-share', 'The text messages of Parkland');
     },
 
     setLinks: function(parent, title) {

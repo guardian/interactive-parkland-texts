@@ -9,13 +9,24 @@
     font-family: 'Guardian Egyptian Web';
     font-weight: 900;
     color: $c-black;
-    font-size: 32px;
+    font-size: 11vw;
     line-height: 1.1;
     margin: 0;
 
-    @include mq(desktop) {
-        font-size: 64px;
+    @include mq(tablet) {
+        font-size: 84px;
         line-height: 1;
+    }
+
+    span {
+        display: block;
+        text-align: right;
+        color: $c-red;
+        margin-top: -1vw;
+
+        @include mq(tablet) {
+            margin-top: -10px;
+        }
     }
 }
 

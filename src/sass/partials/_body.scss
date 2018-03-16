@@ -18,6 +18,11 @@
     line-height: 1.2;
     color: $c-black;
 
+    @include mq(desktop) {
+        font-size: 32px;
+        line-height: 1;
+    }
+
     span {
         color: $c-red;
         display: block;

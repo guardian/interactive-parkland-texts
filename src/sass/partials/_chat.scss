@@ -6,6 +6,12 @@
     margin-bottom: 12px;
     color: $c-black;
 
+    @include mq(desktop) {
+        font-family: 'Guardian Egyptian Web';
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     &.has-shown .text-chat__bubble--copy {
         opacity: 1;
     }
@@ -30,6 +36,10 @@
         max-width: 60%;
     }
 
+    @include mq(desktop) {
+        padding: 6px 10px 10px;
+    }
+
     &:after {
         content: '';
         width: 12px;
@@ -40,6 +50,13 @@
         right: 10px;
         background-color: $c-grey;
         transform: opacity 0.7s linear;
+
+        @include mq(desktop) {
+            width: 20px;
+            height: 20px;
+            border-radius: 0 0 0 20px;
+            bottom: -20px;
+        }
     }
 }
 
@@ -66,6 +83,10 @@
         right: auto;
         border-radius: 0 0 12px;
         background-color: $c-red;
+
+        @include mq(desktop) {
+            border-radius: 0 0 20px;
+        }
     }
 
     &.text-chat__bubble--empty  {
