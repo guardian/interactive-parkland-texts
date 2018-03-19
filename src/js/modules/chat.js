@@ -30,7 +30,7 @@ module.exports =  {
 
     checkChats: function() {
         $('.texts-chat').each(function(index, value) {
-            if (scrollTop > $(value).offset().top - ((height / 2))) {
+            if (scrollTop > $(value).offset().top - ((height / 4) * 3)) {
                 if (!$(value).hasClass('has-shown')) {
                     $(value).addClass('has-shown');
                     $('.is-next').removeClass('is-next');
